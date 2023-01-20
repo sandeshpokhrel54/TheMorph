@@ -1109,9 +1109,8 @@ void PlotParametric(Scene *scene, parametricfn func, Graph *graph)
     }*/
 }
 
-void HandleEvents(GLFWwindow *window, State *state, Graph *graph, Mat4 *world_transform, Mat4 *scale_matrix,
-                  Panel *panel, Mat4 *new_transform, Mat4 *scene_transform);
-
+void HandleEvents(GLFWwindow *window, Scene *scene, State *state, Graph *graph, Mat4 *translate_matrix,
+                  Mat4 *scale_matrix, Panel *panel, Mat4 *new_transform, Mat4 *scene_transform);
 void LoadFont(Font *font, const char *font_dir)
 {
     memset(font, 0, sizeof(*font));
